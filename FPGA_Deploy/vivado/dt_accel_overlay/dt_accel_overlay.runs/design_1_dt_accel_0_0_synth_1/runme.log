@@ -1,0 +1,504 @@
+
+*** Running vivado
+    with args -log design_1_dt_accel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dt_accel_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_dt_accel_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1998.852 ; gain = 85.996 ; free physical = 31079 ; free virtual = 49692
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/hls/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_dt_accel_0_0
+Command: synth_design -top design_1_dt_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 261026
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2746.926 ; gain = 379.672 ; free physical = 27312 ; free virtual = 45929
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1992.714; parent = 1851.395; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3748.219; parent = 2752.867; children = 995.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_dt_accel_0_0' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_dt_accel_0_0/synth/design_1_dt_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_node_feature_V_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_feature_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './dt_accel_node_feature_V_RAM_AUTO_1R1W.dat' is read successfully [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_feature_V_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_node_feature_V_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_feature_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_node_threshold_V_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_threshold_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './dt_accel_node_threshold_V_RAM_AUTO_1R1W.dat' is read successfully [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_threshold_V_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_node_threshold_V_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_threshold_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_node_left_V_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_left_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './dt_accel_node_left_V_RAM_AUTO_1R1W.dat' is read successfully [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_left_V_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_node_left_V_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_node_left_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_dt_accel_Pipeline_READ_FEAT' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_READ_FEAT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_flow_control_loop_pipe_sequential_init' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_flow_control_loop_pipe_sequential_init' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_dt_accel_Pipeline_READ_FEAT' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_READ_FEAT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_dt_accel_Pipeline_TRAVERSE' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_TRAVERSE.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_mux_646_16_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_mux_646_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_mux_646_16_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_mux_646_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_dt_accel_Pipeline_TRAVERSE' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_TRAVERSE.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_dt_accel_Pipeline_LOAD_NODES' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_LOAD_NODES.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_dt_accel_Pipeline_LOAD_NODES' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_dt_accel_Pipeline_LOAD_NODES.v:10]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_control_s_axi' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_control_s_axi.v:239]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_control_s_axi' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_regslice_both' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_regslice_both' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_regslice_both__parameterized0' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_regslice_both__parameterized0' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'dt_accel_regslice_both__parameterized1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel_regslice_both__parameterized1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'dt_accel' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dt_accel_0_0' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_dt_accel_0_0/synth/design_1_dt_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ipshared/fc65/hdl/verilog/dt_accel_control_s_axi.v:322]
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port node_feature_V_q0[6] in module dt_accel_dt_accel_Pipeline_TRAVERSE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module dt_accel_node_feature_V_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module dt_accel_node_left_V_RAM_AUTO_1R1W is either unconnected or has no load
+WARNING: [Synth 8-7129] Port reset in module dt_accel_node_threshold_V_RAM_AUTO_1R1W is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2831.832 ; gain = 464.578 ; free physical = 27431 ; free virtual = 46048
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3827.188; parent = 2831.836; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2849.645 ; gain = 482.391 ; free physical = 27391 ; free virtual = 46011
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3845.000; parent = 2849.648; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2849.645 ; gain = 482.391 ; free physical = 27383 ; free virtual = 46003
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3845.000; parent = 2849.648; children = 995.352
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 2849.645 ; gain = 0.000 ; free physical = 27359 ; free virtual = 45979
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_dt_accel_0_0/constraints/dt_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_dt_accel_0_0/constraints/dt_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.runs/design_1_dt_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.runs/design_1_dt_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.395 ; gain = 0.000 ; free physical = 27233 ; free virtual = 45851
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.05 . Memory (MB): peak = 3001.395 ; gain = 0.000 ; free physical = 27233 ; free virtual = 45850
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27764 ; free virtual = 46384
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27765 ; free virtual = 46384
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.runs/design_1_dt_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27763 ; free virtual = 46383
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'dt_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'dt_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'dt_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'dt_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27774 ; free virtual = 46397
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_stream_V_keep_V_U' (dt_accel_regslice_both__parameterized0) to 'inst/regslice_both_out_stream_V_strb_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 1     
+	   2 Input   31 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               32 Bit    Registers := 18    
+	               31 Bit    Registers := 1     
+	               16 Bit    Registers := 66    
+	               11 Bit    Registers := 1     
+	                9 Bit    Registers := 10    
+	                8 Bit    Registers := 2     
+	                6 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 6     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 43    
++---RAMs : 
+	               4K Bit	(300 X 16 bit)          RAMs := 1     
+	               2K Bit	(300 X 8 bit)          RAMs := 2     
+	               2K Bit	(300 X 9 bit)          RAMs := 2     
++---Muxes : 
+	  12 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 2     
+	   2 Input   16 Bit        Muxes := 63    
+	   2 Input   11 Bit        Muxes := 3     
+	   2 Input    9 Bit        Muxes := 11    
+	   3 Input    9 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   2 Input    6 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   6 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 9     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 3     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 8     
+	   3 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 36    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module dt_accel_dt_accel_Pipeline_LOAD_NODES is either unconnected or has no load
+WARNING: [Synth 8-7129] Port node_feature_V_q0[6] in module dt_accel_dt_accel_Pipeline_TRAVERSE is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module dt_accel_dt_accel_Pipeline_READ_FEAT is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module dt_accel.
+WARNING: [Synth 8-3332] Sequential element (control_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module dt_accel.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27582 ; free virtual = 46220
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2091.165; parent = 1949.846; children = 141.319
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | node_feature_V_U/ram_reg   | 300 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_threshold_V_U/ram_reg | 300 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_left_V_U/ram_reg      | 300 x 9(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_right_V_U/ram_reg     | 300 x 9(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_class_V_U/ram_reg     | 300 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27757 ; free virtual = 46404
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2098.023; parent = 1953.604; children = 144.420
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:00:53 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27878 ; free virtual = 46520
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2128.832; parent = 1984.412; children = 148.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object                 | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | node_feature_V_U/ram_reg   | 300 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_threshold_V_U/ram_reg | 300 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_left_V_U/ram_reg      | 300 x 9(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_right_V_U/ram_reg     | 300 x 9(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | node_class_V_U/ram_reg     | 300 x 8(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+----------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/node_feature_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/node_threshold_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/node_left_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/node_right_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/node_class_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 27999 ; free virtual = 46642
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2128.832; parent = 1984.412; children = 148.327
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29702 ; free virtual = 48340
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29700 ; free virtual = 48338
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29683 ; free virtual = 48322
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29682 ; free virtual = 48320
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29681 ; free virtual = 48320
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29685 ; free virtual = 48324
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |    49|
+|2     |LUT1     |    35|
+|3     |LUT2     |    51|
+|4     |LUT3     |   284|
+|5     |LUT4     |   112|
+|6     |LUT5     |    91|
+|7     |LUT6     |   491|
+|8     |MUXF7    |   128|
+|9     |MUXF8    |    64|
+|10    |RAMB18E1 |     5|
+|11    |FDRE     |  1769|
+|12    |FDSE     |     3|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:58 ; elapsed = 00:01:02 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29688 ; free virtual = 48326
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2129.971; parent = 1984.412; children = 151.318
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3964.734; parent = 2969.383; children = 995.352
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:55 ; elapsed = 00:00:59 . Memory (MB): peak = 3001.395 ; gain = 482.391 ; free physical = 29730 ; free virtual = 48369
+Synthesis Optimization Complete : Time (s): cpu = 00:00:59 ; elapsed = 00:01:02 . Memory (MB): peak = 3001.395 ; gain = 634.141 ; free physical = 29726 ; free virtual = 48365
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3001.395 ; gain = 0.000 ; free physical = 29854 ; free virtual = 48493
+INFO: [Netlist 29-17] Analyzing 246 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3001.395 ; gain = 0.000 ; free physical = 29787 ; free virtual = 48425
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: cb5bf6ac
+INFO: [Common 17-83] Releasing license: Synthesis
+68 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:11 ; elapsed = 00:01:11 . Memory (MB): peak = 3001.395 ; gain = 964.855 ; free physical = 29918 ; free virtual = 48557
+INFO: [Common 17-1381] The checkpoint '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.runs/design_1_dt_accel_0_0_synth_1/design_1_dt_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dt_accel_0_0, cache-ID = 776c9ac78006a695
+INFO: [Coretcl 2-1174] Renamed 15 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/dt_accel_overlay/dt_accel_overlay.runs/design_1_dt_accel_0_0_synth_1/design_1_dt_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dt_accel_0_0_utilization_synth.rpt -pb design_1_dt_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 19:04:06 2026...

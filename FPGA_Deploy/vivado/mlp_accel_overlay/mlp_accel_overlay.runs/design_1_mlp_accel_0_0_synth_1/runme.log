@@ -1,0 +1,840 @@
+
+*** Running vivado
+    with args -log design_1_mlp_accel_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_mlp_accel_0_0.tcl
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_mlp_accel_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/hls/ip_repo'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2022.2/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_mlp_accel_0_0
+Command: synth_design -top design_1_mlp_accel_0_0 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 951649
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2745.535 ; gain = 378.703 ; free physical = 26263 ; free virtual = 45414
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1995.782; parent = 1854.854; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3719.758; parent = 2754.445; children = 965.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_mlp_accel_0_0' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_mlp_accel_0_0/synth/design_1_mlp_accel_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W.dat' is read successfully [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2w1_0_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-3876] $readmem data file './mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W.dat' is read successfully [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W.v:31]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_p_ZL2wo_0_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_x_in_V_RAM_AUTO_1R1W' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_x_in_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_x_in_V_RAM_AUTO_1R1W' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_x_in_V_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_READ_FEAT' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_READ_FEAT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_flow_control_loop_pipe_sequential_init' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_flow_control_loop_pipe_sequential_init' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_flow_control_loop_pipe_sequential_init.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_READ_FEAT' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_READ_FEAT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_L1_DOT' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_L1_DOT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mux_83_16_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_83_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mux_83_16_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_83_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mul_24s_24s_48_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mul_24s_24s_48_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mul_24s_24s_48_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mul_24s_24s_48_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_L1_DOT' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_L1_DOT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_L2_DOT' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_L2_DOT.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_L2_DOT' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_L2_DOT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_OUT_DOT' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_OUT_DOT.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_OUT_DOT' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_OUT_DOT.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_ARGMAX' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_ARGMAX.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mux_104_32_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_104_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mux_104_32_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_104_32_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_ARGMAX' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_ARGMAX.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_W1_VITIS_LOOP_76_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_W1_VITIS_LOOP_76_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_W1_VITIS_LOOP_76_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_W1_VITIS_LOOP_76_1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_B1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_B1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_B1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_B1.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_B2' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_B2.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_B2' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_B2.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_BO' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_BO.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mlp_accel_Pipeline_LOAD_BO' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mlp_accel_Pipeline_LOAD_BO.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_control_s_axi' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_control_s_axi.v:7]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_control_s_axi.v:246]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_control_s_axi' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_control_s_axi.v:7]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mux_646_16_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_646_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mux_646_16_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_646_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mux_104_16_1_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_104_16_1_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mux_104_16_1_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mux_104_16_1_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_mul_32ns_32ns_64_2_1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mul_32ns_32ns_64_2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_mul_32ns_32ns_64_2_1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_mul_32ns_32ns_64_2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_regslice_both' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_regslice_both' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_regslice_both__parameterized0' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_regslice_both__parameterized0' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mlp_accel_regslice_both__parameterized1' [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel_regslice_both__parameterized1' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_regslice_both.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mlp_accel' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_mlp_accel_0_0' (0#1) [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_mlp_accel_0_0/synth/design_1_mlp_accel_0_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element int_ap_done_reg was removed.  [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ipshared/5272/hdl/verilog/mlp_accel_control_s_axi.v:333]
+WARNING: [Synth 8-7129] Port reset in module mlp_accel_mul_32ns_32ns_64_2_1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_BO is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_WO_VITIS_LOOP_110_3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TLAST[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_B2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[31] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[30] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[29] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[28] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[27] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[26] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[25] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[24] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[23] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[22] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[21] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[20] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[19] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[18] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[17] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TDATA[16] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TKEEP[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[3] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[2] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[1] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port in_stream_TSTRB[0] in module mlp_accel_mlp_accel_Pipeline_LOAD_W2_VITIS_LOOP_93_2 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2853.379 ; gain = 486.547 ; free physical = 25932 ; free virtual = 45086
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1995.782; parent = 1854.854; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3818.695; parent = 2853.383; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2871.191 ; gain = 504.359 ; free physical = 25924 ; free virtual = 45078
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1995.782; parent = 1854.854; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3836.508; parent = 2871.195; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2871.191 ; gain = 504.359 ; free physical = 25918 ; free virtual = 45072
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1995.782; parent = 1854.854; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3836.508; parent = 2871.195; children = 965.312
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.1 ; elapsed = 00:00:00.09 . Memory (MB): peak = 2871.191 ; gain = 0.000 ; free physical = 25925 ; free virtual = 45079
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_mlp_accel_0_0/constraints/mlp_accel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.gen/sources_1/bd/design_1/ip/design_1_mlp_accel_0_0/constraints/mlp_accel_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.runs/design_1_mlp_accel_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.runs/design_1_mlp_accel_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3025.941 ; gain = 0.000 ; free physical = 25897 ; free virtual = 45053
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.2 ; elapsed = 00:00:00.07 . Memory (MB): peak = 3025.941 ; gain = 0.000 ; free physical = 25901 ; free virtual = 45059
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/tools/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 26311 ; free virtual = 45470
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1998.763; parent = 1857.838; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 26311 ; free virtual = 45470
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1998.763; parent = 1857.838; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  /home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.runs/design_1_mlp_accel_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 26310 ; free virtual = 45472
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1998.763; parent = 1857.838; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'mlp_accel_control_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'mlp_accel_control_s_axi'
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               11
+*
+                  WRIDLE |                             0010 |                               00
+                  WRDATA |                             0100 |                               01
+                  WRRESP |                             1000 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'mlp_accel_control_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                               10
+*
+                  RDIDLE |                              010 |                               00
+                  RDDATA |                              100 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'mlp_accel_control_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 26386 ; free virtual = 45550
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1998.763; parent = 1857.838; children = 140.929
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_stream_V_keep_V_U' (mlp_accel_regslice_both__parameterized0) to 'inst/regslice_both_out_stream_V_strb_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   48 Bit       Adders := 3     
+	   2 Input   32 Bit       Adders := 4     
+	   2 Input   31 Bit       Adders := 11    
+	   2 Input    9 Bit       Adders := 2     
+	   2 Input    7 Bit       Adders := 7     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               64 Bit    Registers := 6     
+	               48 Bit    Registers := 3     
+	               38 Bit    Registers := 1     
+	               32 Bit    Registers := 61    
+	               31 Bit    Registers := 13    
+	               16 Bit    Registers := 177   
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                7 Bit    Registers := 10    
+	                4 Bit    Registers := 7     
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 8     
+	                1 Bit    Registers := 128   
++---Multipliers : 
+	              32x32  Multipliers := 3     
++---RAMs : 
+	               8K Bit	(512 X 16 bit)          RAMs := 16    
+	               1K Bit	(80 X 16 bit)          RAMs := 8     
+	             1024 Bit	(64 X 16 bit)          RAMs := 3     
++---Muxes : 
+	   2 Input   38 Bit        Muxes := 2     
+	   2 Input   36 Bit        Muxes := 1     
+	   2 Input   33 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 28    
+	  13 Input   32 Bit        Muxes := 1     
+	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   30 Bit        Muxes := 1     
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 1     
+	   3 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 2     
+	   2 Input   19 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 158   
+	   2 Input   15 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 18    
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    6 Bit        Muxes := 3     
+	   2 Input    5 Bit        Muxes := 1     
+	   4 Input    4 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 7     
+	   4 Input    2 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 121   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U8/dout, operation Mode is: A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: register mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U8/dout, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: register mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U8/dout is absorbed into DSP mul_24s_24s_48_1_1_U8/dout.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U26/dout, operation Mode is: A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: register mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U26/dout, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: register mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U26/dout is absorbed into DSP mul_24s_24s_48_1_1_U26/dout.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U42/dout, operation Mode is: A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: register mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: Generating DSP mul_24s_24s_48_1_1_U42/dout, operation Mode is: (PCIN>>17)+A2*B2.
+DSP Report: register mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: register mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: operator mul_24s_24s_48_1_1_U42/dout is absorbed into DSP mul_24s_24s_48_1_1_U42/dout.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U271/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U271/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register zext_ln91_reg_3481_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U271/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U271/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U271/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register zext_ln91_reg_3481_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U271/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U271/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U271/dout_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U270/tmp_product, operation Mode is: A2*B.
+DSP Report: register mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U270/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register zext_ln74_reg_3465_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U270/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U270/tmp_product, operation Mode is: A*B2.
+DSP Report: register mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U270/dout_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register zext_ln74_reg_3465_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: register mul_32ns_32ns_64_2_1_U270/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U270/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U270/dout_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U269/tmp_product, operation Mode is: A*B.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U269/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32ns_32ns_64_2_1_U269/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U269/tmp_product, operation Mode is: A*B.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/tmp_product.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/tmp_product.
+DSP Report: Generating DSP mul_32ns_32ns_64_2_1_U269/dout_reg, operation Mode is: (PCIN>>17)+A*B.
+DSP Report: register mul_32ns_32ns_64_2_1_U269/dout_reg is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+DSP Report: operator mul_32ns_32ns_64_2_1_U269/tmp_product is absorbed into DSP mul_32ns_32ns_64_2_1_U269/dout_reg.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module mlp_accel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module mlp_accel_control_s_axi.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[47]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[46]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[45]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[44]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[43]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[42]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[41]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[40]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[39]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[38]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[37]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[36]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[35]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[34]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[33]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[32]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[31]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[30]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[29]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[28]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[27]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[26]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[25]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[24]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[23]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[22]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[21]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[20]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[19]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[18]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[17]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[47]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[46]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[45]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[44]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[43]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[42]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[41]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[40]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[39]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[38]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[37]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[36]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[35]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[34]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[33]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[32]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[31]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[30]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[29]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[28]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[27]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[26]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[25]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[24]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[23]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[22]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[21]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[20]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[19]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[18]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U271/dout_reg[17]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[47]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[46]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[45]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[44]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[43]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[42]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[41]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[40]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[39]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[38]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[37]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[36]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[35]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[34]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[33]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[32]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[31]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[30]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[29]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[28]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[27]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[26]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[25]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[24]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[23]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[22]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[21]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[20]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[19]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[18]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[17]) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[47]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[46]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[45]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[44]__0) is unused and will be removed from module mlp_accel.
+WARNING: [Synth 8-3332] Sequential element (mul_32ns_32ns_64_2_1_U270/dout_reg[43]__0) is unused and will be removed from module mlp_accel.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 26242 ; free virtual = 45414
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2019.135; parent = 1875.132; children = 144.003
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | p_ZL2w1_0_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_1_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_2_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_3_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_4_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_5_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_6_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_7_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_0_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_1_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_2_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_3_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_4_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_5_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_6_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_7_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_0_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_1_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_2_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_3_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_4_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_5_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_6_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_7_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | x_in_V_U/ram_reg    | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | h1_V_U/ram_reg      | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | h2_V_U/ram_reg      | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping      | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mlp_accel_mlp_accel_Pipeline_L1_DOT  | A2*B2            | 24     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_L1_DOT  | (PCIN>>17)+A2*B2 | 24     | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_L2_DOT  | A2*B2            | 24     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_L2_DOT  | (PCIN>>17)+A2*B2 | 24     | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_OUT_DOT | A2*B2            | 24     | 18     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_OUT_DOT | (PCIN>>17)+A2*B2 | 24     | 7      | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B2  | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A*B2             | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B2  | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A2*B             | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B2  | 16     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A*B2             | 18     | 18     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B2  | 18     | 16     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A*B              | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B   | 16     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A*B              | 18     | 18     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17)+A*B   | 18     | 16     | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 1    | 
++-------------------------------------+------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28083 ; free virtual = 47246
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2174.628; parent = 2022.071; children = 152.557
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 27873 ; free virtual = 47035
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2196.312; parent = 2048.400; children = 152.557
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|inst        | p_ZL2w1_0_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_1_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_2_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_3_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_4_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_5_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_6_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w1_7_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_0_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_1_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_2_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_3_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_4_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_5_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_6_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2w2_7_U/ram_reg | 512 x 16(READ_FIRST)   | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_0_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_1_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_2_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_3_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_4_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_5_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_6_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | p_ZL2wo_7_U/ram_reg | 80 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | x_in_V_U/ram_reg    | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | h1_V_U/ram_reg      | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
+|inst        | h2_V_U/ram_reg      | 64 x 16(READ_FIRST)    | W | R |                        |   |   | Port A           | 1      | 0      | 
++------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_0_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w1_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_0_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2w2_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_0_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_1_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_2_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_3_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_4_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_5_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_6_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/p_ZL2wo_7_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/x_in_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/h1_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/h2_V_U/ram_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 27160 ; free virtual = 46322
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2205.861; parent = 2057.949; children = 152.557
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28825 ; free virtual = 47986
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28817 ; free virtual = 47978
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28694 ; free virtual = 47855
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28640 ; free virtual = 47801
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28546 ; free virtual = 47707
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28418 ; free virtual = 47579
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                          | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|mlp_accel_mlp_accel_Pipeline_L1_DOT  | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_L1_DOT  | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel_mlp_accel_Pipeline_L2_DOT  | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_L2_DOT  | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel_mlp_accel_Pipeline_OUT_DOT | A'*B'              | 30     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel_mlp_accel_Pipeline_OUT_DOT | (PCIN>>17+A'*B')'  | 30     | 18     | -      | -      | 31     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A'*B'              | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B')'  | 15     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A'*B'              | 17     | 17     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B')'  | 17     | 15     | -      | -      | 48     | 1    | 1    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A''*B'             | 17     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B'')' | 15     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B'')' | 17     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A''*B'             | 17     | 15     | -      | -      | 48     | 2    | 1    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B'')' | 15     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
+|mlp_accel                            | A'*B''             | 17     | 17     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 0    | 
+|mlp_accel                            | (PCIN>>17+A'*B'')' | 17     | 15     | -      | -      | 48     | 1    | 2    | -    | -    | -     | 0    | 1    | 
++-------------------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   332|
+|2     |DSP48E1  |    18|
+|7     |LUT1     |    40|
+|8     |LUT2     |   724|
+|9     |LUT3     |   908|
+|10    |LUT4     |   447|
+|11    |LUT5     |   239|
+|12    |LUT6     |  1195|
+|13    |MUXF7    |   352|
+|14    |MUXF8    |   128|
+|15    |RAMB18E1 |    27|
+|17    |FDRE     |  5329|
+|18    |FDSE     |    29|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:00:47 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28330 ; free virtual = 47491
+Synthesis current peak Physical Memory [PSS] (MB): peak = 2230.476; parent = 2074.514; children = 155.962
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3959.242; parent = 2993.930; children = 965.312
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 402 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:43 ; elapsed = 00:00:45 . Memory (MB): peak = 3025.941 ; gain = 504.359 ; free physical = 28284 ; free virtual = 47443
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 3025.941 ; gain = 659.109 ; free physical = 28226 ; free virtual = 47385
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.07 ; elapsed = 00:00:00.08 . Memory (MB): peak = 3025.941 ; gain = 0.000 ; free physical = 28107 ; free virtual = 47268
+INFO: [Netlist 29-17] Analyzing 857 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3025.941 ; gain = 0.000 ; free physical = 27913 ; free virtual = 47074
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 6004c1af
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:53 . Memory (MB): peak = 3025.941 ; gain = 988.855 ; free physical = 28105 ; free virtual = 47266
+INFO: [Common 17-1381] The checkpoint '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.runs/design_1_mlp_accel_0_0_synth_1/design_1_mlp_accel_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_mlp_accel_0_0, cache-ID = 0dec203a1ece96c2
+INFO: [Coretcl 2-1174] Renamed 64 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/STUDENTS/varun/Desktop/Major_Project/BTP_ML_ACCEL/FPGA_Deploy/vivado/mlp_accel_overlay/mlp_accel_overlay.runs/design_1_mlp_accel_0_0_synth_1/design_1_mlp_accel_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_mlp_accel_0_0_utilization_synth.rpt -pb design_1_mlp_accel_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Apr 19 22:54:11 2026...
